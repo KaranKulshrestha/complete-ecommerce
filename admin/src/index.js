@@ -6,7 +6,7 @@ import { Auth0Provider } from "@auth0/auth0-react";
 ReactDOM.render(
   <Auth0Provider
     domain="dashboard-login.us.auth0.com"
-    clientId="tX64ScaEYx7qqi1XFdK2oJ8dzljUMkxS"
+    clientId={process.env.CLIENT_ID}
     authorizationParams={{
       redirect_uri: window.location.origin + "/dashboard"
     }}
